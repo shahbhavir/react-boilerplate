@@ -1,0 +1,23 @@
+{
+	"folders":
+    [
+        {
+            "follow_symlinks": true,
+            "path": ".",
+            "folder_exclude_patterns": []
+        }
+    ],
+    "settings":
+    {
+        "caret_extra_width": 1,
+        "ensure_newline_at_eof_on_save": true,
+        "highlight_line": true,
+        "highlight_modified_tabs": true,
+        "scroll_past_end": true,
+        "show_full_path": false,
+        "tab_size": 4,
+        "translate_tabs_to_spaces": true,
+        "trim_trailing_white_space_on_save": true,
+        "word_wrap": false
+    }
+}
