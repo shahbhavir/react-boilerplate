@@ -30,4 +30,4 @@
 * For development, go to http://localhost:8080/
 
 ### License
-[MIT](http://www.apache.org/licenses/LICENSE-2.0)
+MIT
