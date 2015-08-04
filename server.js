@@ -37,5 +37,10 @@ app.get('/', function(req, res){
     res.render('index.ejs', props);
 });
 
+//Route not found -- Set 404
+app.use(function(req, res, next) {
+    res.status(404).send('Sorry cant find that!');
+});
+
 app.listen(port);
 console.log('Server is Up and Running at Port : ' + port);
