@@ -22,18 +22,20 @@ app.set('view engine', 'ejs');
 app.get('/', function(req, res){
     // React.renderToString takes your component
     // and generates the markup
-    var reactHtml = ReactAddons.renderToString(ReactApp({}));
-    // Output html rendered by react
-    // console.log(myAppHtml);
-    res.render('index.ejs', {reactOutput: reactHtml});
-});
+    var props = {
+        reactOutput: ReactAddons.renderToString(ReactApp({})),
+        isBot: false
+    };
 
-//Route not found -- Set 404
-// app.get('*', function(req, res) {
-//     res.json({
-//         "route": "Sorry this page does not exist!"
-//     });
-// });
+    var useragent = req.headers['user-agent'] && req.headers['user-agent'].toLowerCase();
+
+    if (/googlebot|baiduspider|gurujibot|yandexbot|slurp|msnbot|bingbot|facebookexternalhit|linkedinbot|twitterbot|slackbot/i.test(useragent)) {
+        // check request made by bot ?
+        props.isBot = true;
+    }
+
+    res.render('index.ejs', props);
+});
 
 app.listen(port);
 console.log('Server is Up and Running at Port : ' + port);

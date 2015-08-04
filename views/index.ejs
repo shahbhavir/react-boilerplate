@@ -8,8 +8,10 @@
     <div id="app"><%- reactOutput %></div>
 
     <!-- comment out main.js to see server side only rendering -->
-    <script src="/common.chunk.js"></script>
-    <script src="/app.js"></script>
+    <% if (!isBot) { %>
+      <script src="/common.chunk.js"></script>
+      <script src="/app.js"></script>
+    <% } %>
 
   </body>
 </html>
