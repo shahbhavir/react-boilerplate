@@ -1,6 +1,5 @@
 node_modules/*
 npm-debug.log
-public/*
 webpack-stats*.json
 *.DS_Store
 *.sublime-workspace
