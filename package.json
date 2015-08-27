@@ -1,7 +1,7 @@
 {
   "name": "react-boilerplate",
   "version": "0.0.1",
-  "description": "An Isomorphic React starter project, configured for ES6 React, LESS, Node, Express",
+  "description": "React starter project, configured for ES6 React, LESS, Node, Express",
   "scripts": {
     "start": "node server.js",
     "prestart": "NODE_ENV=production webpack -p",
@@ -16,12 +16,17 @@
     "webpack",
     "react",
     "ecmascript6",
+    "es6",
     "react-hot-loader",
-    "less"
+    "less",
+    "node",
+    "express",
+    "boilerplate",
+    "starter"
   ],
   "author": "Bhavir Shah <shahbhavir@gmail.com>",
   "license": "MIT",
-  "homepage": "https://github.com/shahbhavir/react-boilerplate",
+  "homepage": "http://shahbhavir.github.io/react-boilerplate",
   "devDependencies": {
     "babel": "^5.8.3",
     "babel-core": "^5.8.3",
